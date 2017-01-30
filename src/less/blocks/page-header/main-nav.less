@@ -1,5 +1,5 @@
-@media (max-width: @screen-xl){
-  .main-nav__list-mobile{
+@media (min-width: @screen-xl){
+  .main-nav--mobile{
     display: none;
   }
 }
@@ -29,17 +29,15 @@
     align-items: center;
     margin: auto;
     padding-bottom: 17.5px;
-    &-icon-bar{
-      display: inline-block;
-      background-color: @white;
-      width: 12px;
-      height: 4px;
-      margin: 2.5px 0;
-    }
 }
 
-.main-nav__list {
-    list-style-type: none;
+.main-nav{
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-nav__nav{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-nav__item {
@@ -59,4 +57,11 @@
   text-transform: uppercase;
   padding: 0 6px;
   transition: .3s ease all;
+}
+
+.main-nav__icon-bar {
+    display: inline-block;
+    width: 12px;
+    height: 4px;
+    margin: 2.5px 0;
 }
