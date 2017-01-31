@@ -4,20 +4,11 @@
   }
 }
 
-
 @media (max-width:  @screen-xl){
   .main-nav{
     display: none;
     padding: 0;
   }
-}
-
-.main-nav{
-  .row;
-}
-
-.main-nav__nav{
-  .row;
 }
 
 .main-nav--mobile {
@@ -55,13 +46,19 @@
   line-height: 18px;
   font-weight: 300;
   text-transform: uppercase;
-  padding: 0 6px;
+  padding-left: 30px;
+  padding-right: 30px;
   transition: .3s ease all;
 }
 
 .main-nav__icon-bar {
-  display: inline-block;
+  display: block;
   width: 12px;
   height: 4px;
   margin: 2.5px 0;
+  background-color: @white;
+}
+
+.main-nav__list{
+  .row;
 }
